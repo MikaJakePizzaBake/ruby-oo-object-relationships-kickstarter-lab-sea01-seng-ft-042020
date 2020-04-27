@@ -11,7 +11,7 @@ class Backer
     ProjectBacker.all.select {|project| project.backer == self}
   end
   def backed_projects
+    binding.pry
     find_projects.map {|project| project.project }
   end
 end
-binding.pry
