@@ -3,4 +3,7 @@ class Backer
   def initialize (name)
     @name = name
   end
+  def back_project(project)
+    ProjectBacker.all.select {|project| project.backer == self}
+  end
 end
