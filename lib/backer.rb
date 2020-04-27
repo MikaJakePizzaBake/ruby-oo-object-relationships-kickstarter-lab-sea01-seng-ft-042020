@@ -8,6 +8,3 @@ class Backer
     ProjectBacker.new(project, self)
   end
 end
-
-
-
