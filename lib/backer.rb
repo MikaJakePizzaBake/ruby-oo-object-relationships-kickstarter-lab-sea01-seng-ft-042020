@@ -14,3 +14,4 @@ class Backer
     find_projects.map {|project| project.project }
   end
 end
+binding.pry
