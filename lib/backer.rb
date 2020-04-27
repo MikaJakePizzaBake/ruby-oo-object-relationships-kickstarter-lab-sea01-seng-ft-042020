@@ -5,7 +5,9 @@ class Backer
     @name = name
   end
   def back_project(project)
-    binding.pry
-    ProjectBacker.all.select {|project| project.backer == self}
+    ProjectBacker.new(project, self)
   end
 end
+
+
+
