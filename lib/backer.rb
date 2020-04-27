@@ -7,7 +7,10 @@ class Backer
   def back_project(project)
     ProjectBacker.new(project, self)
   end
+  def find_projects
+    find = ProjectBacker.all.select {|project| project.backer == self}
+  end
   def backed_projects
-    ProjectBacker.all.select {|project| project.backer == self}
+    
   end
 end
